@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'customerconnect-mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=customerconnectdb'
+      - 'MYSQL_USER=developer'
+      - 'MYSQL_PASSWORD=101112'
+      - 'MYSQL_ROOT_PASSWORD=verysecret'
+    ports:
+      - '3306'
