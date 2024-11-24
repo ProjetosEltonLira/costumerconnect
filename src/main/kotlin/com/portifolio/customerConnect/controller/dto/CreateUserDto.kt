@@ -1,17 +1,16 @@
 package com.portifolio.customerConnect.controller.dto
 
 import com.fasterxml.jackson.annotation.JsonAlias
-import com.fasterxml.jackson.annotation.JsonProperty
 
 data class CreateUserDto (
 
-    var cpf: String,
+    var cpf: Long,
 
-    @JsonAlias (value = ["nome_completo"])
-    var nomeCompleto: String,
+    @JsonAlias (value = ["full_name"])
+    var fullName: String,
 
     var email : String,
 
-    var telefone : String
+    var phoneNumber : String
 
 )
